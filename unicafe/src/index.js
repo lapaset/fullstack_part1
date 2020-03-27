@@ -16,10 +16,6 @@ const Statistic = ({ text, score, end }) => (
 const Statistics = ({good, bad, neutral}) => {
   const all = good + bad + neutral
 
-  if (all === 0) {
-    return <p>No feedback given</p>
-  }
-
   const average = () => {
     if (all === 0) {
       return 0
@@ -34,6 +30,10 @@ const Statistics = ({good, bad, neutral}) => {
     return 100 * good / all
   }
 
+  if (all === 0) {
+    return <p>No feedback given</p>
+  }
+  
   return (
     <table>
       <tbody>
