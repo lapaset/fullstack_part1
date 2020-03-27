@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-
 const Header = ({ text }) => <h1>{text}</h1>
 
 const Button = ({ text, handleClick }) => (
@@ -14,6 +13,7 @@ const Statistic = ({ text, score, end }) => (
     <td>{score} {end}</td>
   </tr>
 )
+
 const Statistics = ({good, bad, neutral}) => {
   const all = good + bad + neutral
 
