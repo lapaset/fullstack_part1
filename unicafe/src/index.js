@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
 const Header = ({ text }) => <h1>{text}</h1>
 
@@ -33,7 +34,7 @@ const Statistics = ({good, bad, neutral}) => {
   if (all === 0) {
     return <p>No feedback given</p>
   }
-  
+
   return (
     <table>
       <tbody>
